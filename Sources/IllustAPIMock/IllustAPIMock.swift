@@ -96,15 +96,15 @@ public class IllustAPIMock {
 
     private func setup() {
         let imageURLs: [String] = [
-            "https://firebasestorage.googleapis.com/v0/b/training-ios-2022.appspot.com/o/local%2F01.png?alt=media&token=27a00e90-6651-407b-8b2a-426505091b83",
-            "https://firebasestorage.googleapis.com/v0/b/training-ios-2022.appspot.com/o/local%2F02.png?alt=media&token=f601b590-a4e6-46e9-bdc1-c0870cf655b5",
-            "https://firebasestorage.googleapis.com/v0/b/training-ios-2022.appspot.com/o/local%2F03.png?alt=media&token=4c13b6ce-92ca-42b6-94d2-19e8cbfb272f",
-            "https://firebasestorage.googleapis.com/v0/b/training-ios-2022.appspot.com/o/local%2F04.png?alt=media&token=3f853447-27d5-425b-9b08-31f96d05ccda",
-            "https://firebasestorage.googleapis.com/v0/b/training-ios-2022.appspot.com/o/local%2F05.png?alt=media&token=2b9cb02c-7a9c-4df2-8d14-a8b35966a7e4",
-            "https://firebasestorage.googleapis.com/v0/b/training-ios-2022.appspot.com/o/local%2F06.png?alt=media&token=4258b079-ec9f-48e7-b276-1535c038cf60",
-            "https://firebasestorage.googleapis.com/v0/b/training-ios-2022.appspot.com/o/local%2F07.png?alt=media&token=0438fc2e-f3a2-4d9e-bc05-ac0fd86ed964",
-            "https://firebasestorage.googleapis.com/v0/b/training-ios-2022.appspot.com/o/local%2F08.png?alt=media&token=85a1115a-5251-4ca6-b95a-304aab9d17a6",
-            "https://firebasestorage.googleapis.com/v0/b/training-ios-2022.appspot.com/o/local%2F09.png?alt=media&token=d631ec3e-43d3-4e2f-8ae1-66eb63b194b2"
+            "https://firebasestorage.googleapis.com/v0/b/ios-tutorial-375005.appspot.com/o/01.png?alt=media&token=efe5b321-3e4c-4557-b8a2-a28316964c15",
+            "https://firebasestorage.googleapis.com/v0/b/ios-tutorial-375005.appspot.com/o/02.png?alt=media&token=569fa657-4a03-4437-b171-cc70a0688dbf",
+            "https://firebasestorage.googleapis.com/v0/b/ios-tutorial-375005.appspot.com/o/03.png?alt=media&token=45531e20-c7c9-4046-891c-c4c91fd7134f",
+            "https://firebasestorage.googleapis.com/v0/b/ios-tutorial-375005.appspot.com/o/04.png?alt=media&token=798942e9-a96b-4e45-b25a-dc1383041fa6",
+            "https://firebasestorage.googleapis.com/v0/b/ios-tutorial-375005.appspot.com/o/05.png?alt=media&token=354e8a3b-2c6f-4206-976d-19f4b14e96ea",
+            "https://firebasestorage.googleapis.com/v0/b/ios-tutorial-375005.appspot.com/o/06.png?alt=media&token=d8be90ae-28e3-4971-ada9-5f326c6f68bc",
+            "https://firebasestorage.googleapis.com/v0/b/ios-tutorial-375005.appspot.com/o/07.png?alt=media&token=ab593896-34ab-4258-9a49-03a75dfd7a25",
+            "https://firebasestorage.googleapis.com/v0/b/ios-tutorial-375005.appspot.com/o/08.png?alt=media&token=1ccb43d3-ef0d-44e4-acfa-ded7570f8baf",
+            "https://firebasestorage.googleapis.com/v0/b/ios-tutorial-375005.appspot.com/o/09.png?alt=media&token=df479179-b5d2-4d1d-b8d4-6f7cef262a9c"
         ]
 
         let context = container.viewContext
