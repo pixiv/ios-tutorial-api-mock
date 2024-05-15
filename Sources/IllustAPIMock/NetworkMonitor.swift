@@ -12,6 +12,10 @@ public class NetworkMonitorImpl: NetworkMonitor {
         monitor = NWPathMonitor(requiredInterfaceType: interfaceType)
     }
 
+    deinit {
+        monitor.cancel()
+    }
+
     public func start() {
         monitor.start(queue: .global(qos: .background))
     }
