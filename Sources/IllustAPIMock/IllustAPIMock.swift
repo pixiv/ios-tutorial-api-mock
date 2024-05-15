@@ -2,7 +2,7 @@ import CoreData
 import Foundation
 
 public class IllustAPIMock {
-    var networkMonitor: NetworkMonitor = NetworkMonitorImpl()
+    public var networkMonitor: NetworkMonitor = NetworkMonitorImpl()
 
     private static let databaseName = "Illusts"
     private static let entityName = "IllustEntity"
