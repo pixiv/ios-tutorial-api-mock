@@ -6,11 +6,18 @@ public protocol NetworkMonitor {
 }
 
 public class NetworkMonitorImpl: NetworkMonitor {
-    private let monitor = NWPathMonitor(requiredInterfaceType: .wifi)
-    private let queue = DispatchQueue.global(qos: .background)
+    private let monitor: NWPathMonitor
+
+    public init(interfaceType: NWInterface.InterfaceType = .wifi) {
+        monitor = NWPathMonitor(requiredInterfaceType: interfaceType)
+    }
+
+    deinit {
+        monitor.cancel()
+    }
 
     public func start() {
-        monitor.start(queue: queue)
+        monitor.start(queue: .global(qos: .background))
     }
 
     public func isConnected() -> Bool {

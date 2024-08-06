@@ -2,7 +2,11 @@ import CoreData
 import Foundation
 
 public class IllustAPIMock {
-    var networkMonitor: NetworkMonitor = NetworkMonitorImpl()
+    public var networkMonitor: NetworkMonitor = NetworkMonitorImpl() {
+        didSet {
+            networkMonitor.start()
+        }
+    }
 
     private static let databaseName = "Illusts"
     private static let entityName = "IllustEntity"
@@ -16,8 +20,6 @@ public class IllustAPIMock {
         container.loadPersistentStores { _, _ in }
 
         setup()
-
-        networkMonitor.start()
     }
 
     public func getRanking(offset: Int = 0) async throws -> [Illust] {
